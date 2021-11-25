@@ -2,21 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://marxinal.github.io/</loc>
     <lastmod>2021-11-24T16:35:35+01:00</lastmod>
   </url><url>
-    <loc>/playlist-classification-machine/</loc>
+    <loc>https://marxinal.github.io/playlist-classification-machine/</loc>
     <lastmod>2021-11-24T16:35:35+01:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>https://marxinal.github.io/post/</loc>
     <lastmod>2021-11-24T16:35:35+01:00</lastmod>
   </url><url>
-    <loc>/tags/projects/</loc>
+    <loc>https://marxinal.github.io/tags/projects/</loc>
     <lastmod>2021-11-24T16:35:35+01:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://marxinal.github.io/tags/</loc>
     <lastmod>2021-11-24T16:35:35+01:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://marxinal.github.io/personality-profiling-of-youtube-vloggers/</loc>
+    <lastmod>2021-09-25T02:56:48+01:00</lastmod>
+  </url><url>
+    <loc>https://marxinal.github.io/categories/</loc>
   </url>
 </urlset>
