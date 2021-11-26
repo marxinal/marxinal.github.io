@@ -13,16 +13,17 @@
     <link rel="canonical" href="https://marxinal.github.io/personality-profiling-of-youtube-vloggers/" />
 
      <meta name="description" content="Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.
-Data: The" /> 
+Can I rea" /> 
 
      
     
-    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://marxinal.github.io/youtubers.jpeg"/>
     
  
     <meta name="twitter:title" content="Personality Profiling of Youtube Vloggers"/>
     <meta name="twitter:description" content="Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.
-Data: The"/>
+Can I rea"/>
     <meta name="twitter:url" content="https://marxinal.github.io/personality-profiling-of-youtube-vloggers/" />
     <meta name="twitter:site" content="@"/>
 
@@ -33,12 +34,13 @@ Data: The"/>
 
     <meta property="og:type" content="article" />
     <meta property="og:description" content="Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.
-Data: The" />
+Can I rea" />
 
     <meta property="article:published_time" content="2021-09-25T02:56:48&#43;01:00" />
     <meta property="article:tag" content="projects" />
 
-    <meta property="og:image" content="https://marxinal.github.io/backgrounddots.jpeg"/>
+    <meta property="og:image" content="https://marxinal.github.io/youtubers.jpeg"/>
+
 
     <meta name="generator" content="Hugo 0.89.4" />
 
@@ -66,7 +68,7 @@ Data: The" />
         
         
             <li class="" role="menuitem">
-              <a href="/tags/aboutme">About me</a>
+              <a href="/tags/home">Home</a>
             </li>
         
             <li class="" role="menuitem">
@@ -115,13 +117,15 @@ Data: The" />
         <h1 class="post-full-title">Personality Profiling of Youtube Vloggers</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(https://marxinal.github.io/defimg/1.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://marxinal.github.io/youtubers.jpeg)">
     </figure>
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
         <p>Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.</p>
-<p>Data: The YouTube personality dataset consists of a collection of behavorial features, speech transcriptions, and personality impression scores for a set of 404 YouTube vloggers that explicitly show themselves in front of the a webcam talking about a variety of topics including personal issues, politics, movies, books, etc. There is no content-related restriction and the language used in the videos is natural and diverse. For 80 of the 404 vloggers the personality impression scores are missing. The model is used to predict scores for these 80 vloggers.</p>
+<p>Can I really make a model that will predict Youtuber&rsquo;s personality scores?</p>
+<!-- raw HTML omitted -->
+<p>Data: The YouTube personality dataset consists of a collection of behavioral features, speech transcriptions, and personality impression scores for a set of 404 YouTube vloggers that explicitly show themselves in front of the a webcam talking about a variety of topics including personal issues, politics, movies, books, etc. There is no content-related restriction and the language used in the videos is natural and diverse. For 80 of the 404 vloggers the personality impression scores are missing. The model is used to predict scores for these 80 vloggers.</p>
 <p><strong>Dependent Variable:</strong> <em>(Big Five Personality Traits)</em></p>
 <ul>
 <li>Extraversion</li>
@@ -130,75 +134,88 @@ Data: The" />
 <li>Agreeableness</li>
 <li>Openess to Experience</li>
 </ul>
-<p><strong>Predictors:</strong> <em>(Independent Variables/Features)</em></p>
-<p>The predictors stemmed from three different aspects:</p>
+<p><strong>Predictors:</strong> <em>(Independent Variables/Features)</em>
+The predictors stemmed from three different aspects:</p>
 <ol>
 <li>Speech transcripts</li>
 <li>AudioVisual remarks (behavioural aspects)</li>
 <li>Personality scores of other vloggers</li>
 </ol>
 <p>Based on the aforementioned, I constructed the following features:</p>
-<p>Features derived from the speech transcript texts:</p>
+<h4 id="features-derived-from-the-speech-transcript-texts">Features derived from the speech transcript texts:</h4>
 <ul>
-<li>Number of times the word &ldquo;um&rdquo; is used
+<li><em>Number of times the word &ldquo;um&rdquo; is used</em>
 <ul>
-<li>The first feature is the number of times the words &ldquo;um&rdquo;, &ldquo;uhm&rdquo;, and &ldquo;uh&rdquo; are used. These are so called filler words to avoid silences. Even though a direct <br>
-relationship between the use of filler words could not be shown in earlier research (Laserna et al., 2014), they could still indicate difficulty finding words     to say which might be related to for example introversion.</li>
+<li>The first feature is the number of times the words &ldquo;um&rdquo;, &ldquo;uhm&rdquo;, and &ldquo;uh&rdquo; are used. These are so called filler words to avoid silences. Even though a direct relationship between the use of filler word     could not be shown in earlier research (Laserna et al., 2014), they could still indicate difficulty finding words to say which might be related to for example introversion.</li>
 </ul>
 </li>
-<li>NRC lexicon
--The second feature is the NRC. The NRC is a large database that enables us to associate words with 8 common emotions, which are either negative or positive. How    much each emotion occurs in a text might tell us something about the personality of the speaker. In earlier research sentiment analysis using NRC was shown to      be an effective personality predictor (Christian et al. 2021).</li>
-<li>Bing lexicon
+<li><em>NRC lexicon</em>
 <ul>
-<li>The third feature is Bing. Bing doesn&rsquo;t allow us to assign emotions to a word but it does let us classify words as positive or negative. The number of words in     a text that are positive or negative might also tell us something about de personality of the speaker. Also since the distribution of postive and negative  <br>
-words is different in Bing than in NRC it seems sensible to use both.</li>
+<li>The second feature is the NRC. The NRC is a large database that enables us to associate words with 8 common emotions, which are either negative or positive.
+How much each emotion occurs in a text might tell us something about the personality of the speaker. In earlier research sentiment analysis using NRC was shown to be an effective personality predictor
+(Christian et al. 2021).</li>
 </ul>
 </li>
-<li>Count of Syllables
+<li><em>Bing lexicon</em>
 <ul>
-<li>The sixth feature is the number of syllables that each vlogger uses. Earlier research has shown that this is an effective predictor for mainly agreeableness
-(Metha et al., 2020). Even though this study was on written text, this finding might also hold for speech.</li>
+<li>The third feature is Bing. Bing doesn&rsquo;t allow us to assign emotions to a word but it does let us classify words as positive or negative. The number of words in a text that are positive or negative
+might also tell us something about the personality of the speaker. Also since the distribution of positive and negative words is different in Bing than in NRC it seems sensible to use both.</li>
 </ul>
 </li>
-<li>Number of questions
+<li><em>Count of Syllables</em>
 <ul>
-<li>The seventh feature is the number of questions in a vlog. Asking questions might for example be related to insecurity and thus introversion or to curiousness<br>
-and thus opnenness to experience.</li>
+<li>The sixth feature is the number of syllables that each vlogger uses. Earlier research has shown that this is an effective predictor for mainly agreeableness (Metha et al., 2020). Even though this
+study was on written text, this finding might also hold for speech.</li>
 </ul>
 </li>
-<li>Swear words
+<li><em>Number of questions</em>
 <ul>
-<li>The eight feature is the number of swear words that is used. The study of Metha et al. 2020 also showed this was an effective predictor for agreeabless
-Besides that it also intuitively makes sense that the number of swear words would predict agreeableness (the more swear words the lower agreeableness)
-and possibly other big five traits.</li>
+<li>The seventh feature is the number of questions in a vlog. Asking questions might for example be related to insecurity and thus introversion or to curiousness and thus opnenness to experience.</li>
 </ul>
 </li>
-<li>Number of pauses
+<li><em>Swear words</em>
 <ul>
-<li>The ninth feature is the number of pauses for each vlogger. Since there are a lot of ways pauses or silence can be used in speech Kostiuk (2012) so it might       predict personality in different ways. However if there are a lot of pauses this likely indicates difficulty finding words which might be associated with           introversion.</li>
+<li>The eight feature is the number of swear words that is used. The study of Methaet al. 2020 also showed this was an effective predictor for agreeabless. Besides that it also intuitively makes sense
+that the number of swear words would predict agreeableness (the more swear words the lower agreeableness) and possibly other big five traits.</li>
 </ul>
 </li>
-<li>Self-Reference/&ldquo;I&rdquo; Words
+<li><em>Number of pauses</em>
 <ul>
-<li>Our tenth feature is the use of self-reference words. Self-reference words are associated with multiple personality traits so their use might be a good
-predictor for the Big Five. Earlier research showed for example an association between the use of the word &ldquo;I&rdquo; and neuroticism (Scully &amp; Terry, 2011).</li>
+<li>The ninth feature is the number of pauses for each vlogger. Since there are a lot of ways pauses or silence can be used in speech Kostiuk (2012) so it might predict personality in different ways.
+However if there are a lot of pauses this likely indicates difficulty finding words which might be associated with introversion.</li>
+</ul>
+</li>
+<li><em>Self-Reference/&ldquo;I&rdquo; Words</em>
+<ul>
+<li>The tenth feature is the use of self-reference words. Self-reference words are associated with multiple personality traits so their use might be a good predictor for the Big Five.
+Earlier research showed for example an association between the use of the word &ldquo;I&rdquo; and neuroticism (Scully &amp; Terry, 2011).</li>
 </ul>
 </li>
 <li>Some additional features based on similar reasoning:
 <ul>
-<li>&ldquo;We&rdquo; Words Relative Frequency</li>
-<li>Average Number of characters in a sentence</li>
-<li>AFINN</li>
-<li>Negation frequency</li>
-<li>Mean Word Count Per Sentence</li>
+<li><em>&ldquo;We&rdquo; Words Relative Frequency</em></li>
+<li><em>Average Number of characters in a sentence</em></li>
+<li><em>AFINN</em></li>
+<li><em>Negation frequency</em></li>
+<li><em>Mean Word Count Per Sentence</em></li>
 </ul>
 </li>
 </ul>
 <p><strong>Methods and Models employed:</strong></p>
-<ul>
-<li>Here I employed a linear model along with stepwise regression methods (using the forward and the hybrid approach). Additionally, an alternative model with non-linear transformations was fitted in order to potentially increase the explained variance, and was thus compared to the primary model that does not violate the assumption of additivity.</li>
-</ul>
-<p><!-- raw HTML omitted -->Model Evaluation and Model Comparison:<!-- raw HTML omitted --></p>
+<p>Features with high correlation with other features (collinearity) and those with non-zero variance were removed.</p>
+<p>Here I employed a linear model along with stepwise regression methods (using the forward and the hybrid approach) predicting the combined output variable consisting of all scores on the Big Five
+Personality Traits. Additionally, an alternative model with non-linear transformations was fitted in order to potentially increase the explained variance, and was thus compared to the primary model that  does not violate the assumption of additivity.</p>
+<p><strong>Model Evaluation and Model Comparison:</strong></p>
+<p>The simple model with no non-linear transformations had the highest explained variance, thus this model was used for prediction purposes.</p>
+<p><strong>Results:</strong></p>
+<p>My model explained 76% of the variance in Big Five Personality Traits scores using a test set.</p>
+<p>References</p>
+<hr>
+<p>Christian, H., Suhartono, D., Chowanda, A., &amp; Zamli, K. Z. (2021). Text based personality prediction from multiple social media data sources using pre-trained language model and model averaging. Journal of Big Data, 8(1). <a href="https://doi.org/10.1186/s40537-021-00459-1">https://doi.org/10.1186/s40537-021-00459-1</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Lee, C. H., Kim, K., Seo, Y. S., &amp; Chung, C. K. (2007). The Relations Between Personality and Language Use. The Journal of General Psychology, 134(4), 405–413. <a href="https://doi.org/10.3200/genp.134.4.405-414">https://doi.org/10.3200/genp.134.4.405-414</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Laserna, C. M., Seih, Y. T., &amp; Pennebaker, J. W. (2014). Um . . . Who Like Says You Know. Journal of Language and Social Psychology, 33(3), 328–338. <a href="https://doi.org/10.1177/0261927x14526993">https://doi.org/10.1177/0261927x14526993</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Mehta, Y., Fatehi, S., Kazameini, A., Stachl, C., Cambria, E., &amp; Eetemadi, S. (2020). Bottom-Up and Top-Down: Predicting Personality with Psycholinguistic and Language Model Features. 2020 IEEE International Conference on Data Mining (ICDM). Published. <a href="https://doi.org/10.1109/icdm50108.2020.00146">https://doi.org/10.1109/icdm50108.2020.00146</a> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Scully, I. D., &amp; Terry, C. P. (2011). Self-Referential Memory for the Big-Five Personality Traits. Psi Chi Journal of Psychological Research, 16(3), 123–128. <a href="https://doi.org/10.24839/1089-4136.jn16.3.123">https://doi.org/10.24839/1089-4136.jn16.3.123</a></p>
     
         </div>
     </section>
@@ -225,32 +242,58 @@ predictor for the Big Five. Earlier research showed for example an association b
   <div class="inner">
     <div class="read-next-feed">      
       
+<article class="read-next-card" 
+            style="background-image: url(https://marxinal.github.io/backgrounddots.jpeg);" >
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash; Portofolio &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://marxinal.github.io/tags/projects/">#projects</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+                      
+        
+          <li><a href="https://marxinal.github.io/facial-expression-recognition/">Facial Expression Recognition</a></li>            
+        
+          <li><a href="https://marxinal.github.io/customer-satisfaction-from-amazon-reviews/">Customer Satisfaction from Amazon Reviews</a></li>            
+        
+          <li><a href="https://marxinal.github.io/playlist-classification-machine/">Playlist Classification Machine</a></li>            
+        
+          <li><a href="https://marxinal.github.io/physical-activity-recognition/">Physical Activity Recognition</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://marxinal.github.io/tags/projects/">See all related posts →</a>
+    </footer>
+</article>
+
 
       
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://marxinal.github.io/playlist-classification-machine/">
-      <div class="post-card-image" style="background-image: url(https://marxinal.github.io/musicpic.jpeg)"></div>
+    <a class="post-card-image-link" href="https://marxinal.github.io/facial-expression-recognition/">
+      <div class="post-card-image" style="background-image: url(https://marxinal.github.io/facial.jpeg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://marxinal.github.io/playlist-classification-machine/">
+      <a class="post-card-content-link" href="https://marxinal.github.io/facial-expression-recognition/">
           <header class="post-card-header">
               <span class="post-card-tags">
               #projects  </span>
               
-              <h2 class="post-card-title">Playlist Classification Machine</h2>
+              <h2 class="post-card-title">Facial Expression Recognition</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>Description: Predicting the genre (class) of a playlist using audio features.
-Data: Extracted from the &ldquo;Spotifyr&rdquo; package in R.
-Dependent Variable: (Eight Genres)
- Rap/HipHop Synth Jazz Anime Openings Pop Classical Music Russian Turbo Polka Frenchcore  Predictors: (Independent Variables/Features)
- Loudness Speechiness Acousticness Instrumentalness Tempo Liveness Mode Danceability Energy Key Valence Track Popularity  Methods and Models employed:
-Linear Discriminant Analysis (LDA) and Leave One Out Cross-Validation (LOOCV)
-Model Evaluation: ...  </p>
+                <p>Description: Using data extracted from images to build an algorithm that is able to recognize emotions from photographs from facial expressions.
+Data:
+ Where do the data come from? (To which population will results generalize?)   The data came from the CK+ dataset. The obtained results from this statistical analysis will generalize to black &amp; white photos representative of four emotions. Those are sadness, happiness, disgust, and anger. When taking into consideration the actual generalizability of the data, it is arguable that this dataset will not be able to generalize well to children and infants, but also other non Euro-American faces. ...  </p>
               
           </section>
       </a>

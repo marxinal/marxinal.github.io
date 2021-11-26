@@ -23,13 +23,45 @@ Model Evaluation:</description>
     </item>
     
     <item>
+      <title>Physical Activity Recognition</title>
+      <link>https://marxinal.github.io/physical-activity-recognition/</link>
+      <pubDate>Mon, 25 Oct 2021 21:42:00 +0100</pubDate>
+      
+      <guid>https://marxinal.github.io/physical-activity-recognition/</guid>
+      <description>Description: Building a classifier that recognizes different types of physical activity from signals measured by the accelerometer and gyroscope in a smartphone, which both measure aspects of movement and orientation.
+Data: Collected in a lab using a basic smartphone in experiments with human participants carrying out various daily activities in set order. The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (standing, sitting, lying) and three dynamic activities (walking, walking downstairs and walking upstairs).</description>
+    </item>
+    
+    <item>
+      <title>Customer Satisfaction from Amazon Reviews</title>
+      <link>https://marxinal.github.io/customer-satisfaction-from-amazon-reviews/</link>
+      <pubDate>Wed, 13 Oct 2021 00:41:53 +0100</pubDate>
+      
+      <guid>https://marxinal.github.io/customer-satisfaction-from-amazon-reviews/</guid>
+      <description>Description: Here I tried to build a classifier that automatically recognizes customer satisfaction from textual reviews of baby products that were sold on Amazon.com.
+Data: Reviews and 5 star ratings were collected by Amazon on their site by inviting customers to enter a review of a product that had bought. The extracted data from Amazon contains: the item described, the review text as a (long) string, and a numeric rating. Customers are assumed the be &amp;ldquo;satisfied&amp;rdquo; if the numeric rating is greater than the midpoint of the scale.</description>
+    </item>
+    
+    <item>
+      <title>Facial Expression Recognition</title>
+      <link>https://marxinal.github.io/facial-expression-recognition/</link>
+      <pubDate>Sat, 25 Sep 2021 23:58:16 +0100</pubDate>
+      
+      <guid>https://marxinal.github.io/facial-expression-recognition/</guid>
+      <description>Description: Using data extracted from images to build an algorithm that is able to recognize emotions from photographs from facial expressions.
+Data:
+ Where do the data come from? (To which population will results generalize?)   The data came from the CK+ dataset. The obtained results from this statistical analysis will generalize to black &amp;amp; white photos representative of four emotions. Those are sadness, happiness, disgust, and anger. When taking into consideration the actual generalizability of the data, it is arguable that this dataset will not be able to generalize well to children and infants, but also other non Euro-American faces.</description>
+    </item>
+    
+    <item>
       <title>Personality Profiling of Youtube Vloggers</title>
       <link>https://marxinal.github.io/personality-profiling-of-youtube-vloggers/</link>
       <pubDate>Sat, 25 Sep 2021 02:56:48 +0100</pubDate>
       
       <guid>https://marxinal.github.io/personality-profiling-of-youtube-vloggers/</guid>
       <description>Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.
-Data: The YouTube personality dataset consists of a collection of behavorial features, speech transcriptions, and personality impression scores for a set of 404 YouTube vloggers that explicitly show themselves in front of the a webcam talking about a variety of topics including personal issues, politics, movies, books, etc.</description>
+Can I really make a model that will predict Youtuber&amp;rsquo;s personality scores?
+Data: The YouTube personality dataset consists of a collection of behavioral features, speech transcriptions, and personality impression scores for a set of 404 YouTube vloggers that explicitly show themselves in front of the a webcam talking about a variety of topics including personal issues, politics, movies, books, etc.</description>
     </item>
     
   </channel>
