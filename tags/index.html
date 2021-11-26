@@ -63,6 +63,10 @@
             </li>
         
             <li class="" role="menuitem">
+              <a href="/aboutme/">About me</a>
+            </li>
+        
+            <li class="" role="menuitem">
               <a href="/tags/projects/">Projects</a>
             </li>
         
@@ -116,6 +120,34 @@
 
 <article class="post-card post"> 
     
+    <a class="post-card-image-link" href="https://marxinal.github.io/post/">
+      <div class="post-card-image" style="background-image: url(https://marxinal.github.io/defimg/2.jpg)"></div>
+    </a>    
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://marxinal.github.io/post/">
+          <header class="post-card-header">
+              
+              <h2 class="post-card-title">Posts</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p> </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://marxinal.github.io/id.jpg" alt="Author" />
+          <span class="post-card-author"><a href="/">Jelena Kalinic</a></span>
+      </footer>
+    </div>
+</article>
+ 
+
+<article class="post-card post"> 
+    
     <a class="post-card-image-link" href="https://marxinal.github.io/personality-profiling-of-youtube-vloggers/">
       <div class="post-card-image" style="background-image: url(https://marxinal.github.io/youtubers.jpeg)"></div>
     </a>
@@ -132,7 +164,6 @@
           <section class="post-card-excerpt">
               
                 <p>Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.
-Can I really make a model that will predict Youtuber&rsquo;s personality scores?
 Data: The YouTube personality dataset consists of a collection of behavioral features, speech transcriptions, and personality impression scores for a set of 404 YouTube vloggers that explicitly show themselves in front of the a webcam talking about a variety of topics including personal issues, politics, movies, books, etc. ...  </p>
               
           </section>
@@ -148,55 +179,28 @@ Data: The YouTube personality dataset consists of a collection of behavioral fea
 
 <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="https://marxinal.github.io/facial-expression-recognition/">
-      <div class="post-card-image" style="background-image: url(https://marxinal.github.io/facial.jpeg)"></div>
+    <a class="post-card-image-link" href="https://marxinal.github.io/playlist-classification-machine/">
+      <div class="post-card-image" style="background-image: url(https://marxinal.github.io/musicpic.jpeg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="https://marxinal.github.io/facial-expression-recognition/">
+      <a class="post-card-content-link" href="https://marxinal.github.io/playlist-classification-machine/">
           <header class="post-card-header">
               <span class="post-card-tags">
               #projects  </span>
               
-              <h2 class="post-card-title">Facial Expression Recognition</h2>
+              <h2 class="post-card-title">Playlist Classification Machine</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>Description: Using data extracted from images to build an algorithm that is able to recognize emotions from photographs from facial expressions.
-Data:
- Where do the data come from? (To which population will results generalize?)   The data came from the CK+ dataset. The obtained results from this statistical analysis will generalize to black &amp; white photos representative of four emotions. Those are sadness, happiness, disgust, and anger. When taking into consideration the actual generalizability of the data, it is arguable that this dataset will not be able to generalize well to children and infants, but also other non Euro-American faces. ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="https://marxinal.github.io/id.jpg" alt="Author" />
-          <span class="post-card-author"><a href="/">Jelena Kalinic</a></span>
-      </footer>
-    </div>
-</article>
- 
-
-<article class="post-card post"> 
-    
-    <a class="post-card-image-link" href="https://marxinal.github.io/customer-satisfaction-from-amazon-reviews/">
-      <div class="post-card-image" style="background-image: url(https://marxinal.github.io/amazon.jpeg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="https://marxinal.github.io/customer-satisfaction-from-amazon-reviews/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #projects  </span>
-              
-              <h2 class="post-card-title">Customer Satisfaction from Amazon Reviews</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>Description: Here I tried to build a classifier that automatically recognizes customer satisfaction from textual reviews of baby products that were sold on Amazon.com.
-Data: Reviews and 5 star ratings were collected by Amazon on their site by inviting customers to enter a review of a product that had bought. The extracted data from Amazon contains: the item described, the review text as a (long) string, and a numeric rating. Customers are assumed the be &ldquo;satisfied&rdquo; if the numeric rating is greater than the midpoint of the scale. ...  </p>
+                <p>Description: Predicting the genre (class) of a playlist using audio features.
+Data: Extracted from the &ldquo;Spotifyr&rdquo; package in R.
+Dependent Variable: (Eight Genres)
+ Rap/HipHop Synth Jazz Anime Openings Pop Classical Music Russian Turbo Polka Frenchcore  Predictors: (Independent Variables/Features)
+ Loudness Speechiness Acousticness Instrumentalness Tempo Liveness Mode Danceability Energy Key Valence Track Popularity  Methods and Models employed:
+Linear Discriminant Analysis (LDA) and Leave One Out Cross-Validation (LOOCV)
+Model Evaluation: ...  </p>
               
           </section>
       </a>

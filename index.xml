@@ -60,8 +60,16 @@ Data:
       
       <guid>https://marxinal.github.io/personality-profiling-of-youtube-vloggers/</guid>
       <description>Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.
-Can I really make a model that will predict Youtuber&amp;rsquo;s personality scores?
 Data: The YouTube personality dataset consists of a collection of behavioral features, speech transcriptions, and personality impression scores for a set of 404 YouTube vloggers that explicitly show themselves in front of the a webcam talking about a variety of topics including personal issues, politics, movies, books, etc.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://marxinal.github.io/aboutme/</link>
+      <pubDate>Tue, 14 Sep 2021 22:17:00 +0000</pubDate>
+      
+      <guid>https://marxinal.github.io/aboutme/</guid>
+      <description>I am a Behavioural Data Scientist student who enjoys deploying complex statistical and machine learning models to Big Data. Proficient in predictive modelling, data mining, data processing, problem solving, as well as scripting languages including R and Python. My goal is to bridge the knowledge from Psychology, Data Science, and my passion for music. I desire to deploy highly adaptive diverse services to translate business and functional qualifications into substantial deliverables all to enhance the experience and reachability of music around the world.</description>
     </item>
     
   </channel>

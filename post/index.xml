@@ -60,7 +60,6 @@ Data:
       
       <guid>https://marxinal.github.io/personality-profiling-of-youtube-vloggers/</guid>
       <description>Description: Building a model that will predict scores on the Big Five Personality Traits of Youtube Vloggers using different aspects of their videos.
-Can I really make a model that will predict Youtuber&amp;rsquo;s personality scores?
 Data: The YouTube personality dataset consists of a collection of behavioral features, speech transcriptions, and personality impression scores for a set of 404 YouTube vloggers that explicitly show themselves in front of the a webcam talking about a variety of topics including personal issues, politics, movies, books, etc.</description>
     </item>
     
